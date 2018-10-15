@@ -1,0 +1,96 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+	font-family: 'Niramit', sans-serif;
+	background:#F9F8F6;
+}
+
+h2 {
+	font-size:2.85em;
+}
+
+h3 {
+	font-size:1.5em;
+}
+
+.js-macy-container {
+	position:relative;
+	height:1494px;
+	width: calc(80%-100px);	
+	margin:0 auto;
+}
+
+.top-stories-title {
+	width:70vw;
+	height:100px;
+	margin:0 auto;
+	// border:1px solid blue;
+	padding-left:5em;
+}
+ul#recent-articles {
+	width: 70vw;
+	height:100vh;
+	
+	// border:1px solid red;
+	margin:0 auto;
+	display:grid;
+	grid-template-columns:1fr 1fr;
+}
+
+li.recent-story {
+	min-height:520px;
+	min-width: calc(40%-100px);
+	position:relative;
+	display:inline-block;
+	// border:1px solid green;
+	text-align:left;
+	background:white;
+	margin-bottom:0.5em;
+	margin-left:0.5em;
+	.post-container {
+		padding:0em 5em 0em 5em;
+		height:100px;
+		margin-top:20em;
+		width:calc(20%-200px);
+		position:relative;
+		display:block;
+		// border:1px solid orange;
+		a {
+			font-size:1.85em;
+			font-weight:600;
+		}
+			span {
+			text-transform: uppercase;
+			font-size:0.85em;
+			font-weight:700;
+			letter-spacing:2px;
+			color: grey;
+			white-space:nowrap;
+			text-align:left;
+			font-family: 'Open Sans', sans-serif;
+		}
+	}
+}
+
+button#more-posts {
+	height:50px;
+	width:150px;
+	border-radius:60px;
+	display:block;
+	position:relative;
+	top:5%;
+	left:43%;
+	background: orange;
+	color:white;
+	text-align:center;
+	h3 {
+		margin-top:0.75em;
+	}
+}
+
+button#more-posts:focus {
+	outline:none;
+}

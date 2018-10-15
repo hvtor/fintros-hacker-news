@@ -1,0 +1,21 @@
+
+<div class=top-stories>
+	<div class="top-stories-title js-macy-container">
+			<h2>Top Stories</h2>
+			<p></p>
+		</div>
+	<ul id="recent-articles">
+		
+		<% @article_responses.each do |article| %>
+			<li class="recent-story">
+			<div class="post-container">
+				<span>Top Stories</span><br>
+				<a><%= article["title"] %></a>
+			</div>
+		</li>
+		<% end %>
+			<button id="more-posts">
+				<h3>More Posts</h3>
+			</button>
+	</ul>
+</div>
