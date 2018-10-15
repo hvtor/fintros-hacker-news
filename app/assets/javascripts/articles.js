@@ -1,18 +1,18 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+document.addEventListener("DOMContentLoaded", function() {
 
-var btn = document.getElementById('more-posts');
-var bio = document.getElementById('recent-articles');
- 
-Rails.ajax({
-	url: 'articles/load_articles',
-	type: "GET",
-	success: function(event) {
-	}
-})
-  
-btn.addEventListener('onclick', function(event) {
-	event.preventDefault();
-	console.log("More posts clicked!")
+	var btn = document.getElementById('more-posts');
+	var bio = document.getElementById('recent-articles');
+
+
+	btn.addEventListener('onclick', function(event) {
+		Rails.ajax({
+			url: 'articles/load_articles',
+			type: "GET",
+			success: function(event) {
+				event.preventDefault();
+				alert(btn);
+				console.log("More posts clicked");
+			}
+		});
+	});
 });
