@@ -94,3 +94,15 @@ button#more-posts {
 button#more-posts:focus {
 	outline:none;
 }
+
+@media only screen and (min-width:320px) and (max-width:479px) {
+	ul#recent-articles {
+	width:100vw;
+		display:grid;
+			grid-template-columns:1fr;
+	}
+	li.recent-story {
+		min-height:600px;
+	}
+
+}

@@ -1,5 +1,3 @@
-require "httparty"
-
 class ArticlesController < ApplicationController
   def index
   	@articles = ArticleCache.retrieve(30,0)

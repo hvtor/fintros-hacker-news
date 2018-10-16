@@ -10,8 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
 			type: "GET",
 			success: function(event) {
 				event.preventDefault();
-				alert(btn);
-				console.log("More posts clicked");
 			}
 		});
 	});
