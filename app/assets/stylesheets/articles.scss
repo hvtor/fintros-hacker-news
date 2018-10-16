@@ -41,7 +41,7 @@ ul#recent-articles {
 }
 
 li.recent-story {
-	height:inherit;
+	height:520px;
 	min-width: calc(40%-100px);
 	position:relative;
 	display:inline-block;
@@ -105,7 +105,7 @@ button#more-posts:focus {
 	li.recent-story {
 		margin-left: -2em;
 		width:85vw;
-		min-height:600px;
+		// min-height:600px;
 	}
 
 	button#more-posts {
