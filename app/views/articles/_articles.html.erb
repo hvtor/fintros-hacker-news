@@ -1,0 +1,5 @@
+<%= render collection: @articles, partial: "article" %>
+<%= hidden_field_tag("next-article", @next_article) %>
+<button id="more-posts">
+	<h3>More Posts</h3>
+</button>
