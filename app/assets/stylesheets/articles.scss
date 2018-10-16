@@ -41,7 +41,7 @@ ul#recent-articles {
 }
 
 li.recent-story {
-	min-height:520px;
+	height:inherit;
 	min-width: calc(40%-100px);
 	position:relative;
 	display:inline-block;
@@ -50,8 +50,9 @@ li.recent-story {
 	background:white;
 	margin-bottom:0.5em;
 	margin-left:0.5em;
+	padding-bottom:2em;
 	.post-container {
-		padding:0em 5em 0em 5em;
+		padding:0em 5em 2em 5em;
 		height:100px;
 		margin-top:20em;
 		width:calc(20%-200px);
@@ -97,12 +98,18 @@ button#more-posts:focus {
 
 @media only screen and (min-width:320px) and (max-width:479px) {
 	ul#recent-articles {
-	width:100vw;
+	width:80vw;
 		display:grid;
-			grid-template-columns:1fr;
+		grid-template-columns:1fr;
 	}
 	li.recent-story {
+		margin-left: -2em;
+		width:85vw;
 		min-height:600px;
+	}
+
+	button#more-posts {
+		left:25%;
 	}
 
 }
